@@ -18,7 +18,7 @@ export const api = createApi({
             Number(meta?.response?.headers.get("X-Total-Count")) / LIMIT,
         };
       },
-      async onQueryStarted(id, { dispatch, queryFulfilled }) {
+      async onQueryStarted(_id, { dispatch, queryFulfilled }) {
         try {
           const { data } = await queryFulfilled;
           dispatch(setPostData(data.posts));

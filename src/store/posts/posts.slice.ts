@@ -9,7 +9,7 @@ export const postsSlice = createSlice({
   name: "posts",
   initialState,
   reducers: {
-    setPostData: (state, action: PayloadAction<IPost[]>) => action.payload,
+    setPostData: (_state, action: PayloadAction<IPost[]>) => action.payload,
     setFilterPostData: (state, action: PayloadAction<ISort>) =>
       sortData(state, action.payload),
   },

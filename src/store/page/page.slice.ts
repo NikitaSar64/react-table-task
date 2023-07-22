@@ -6,7 +6,7 @@ export const activePageSlice = createSlice({
   name: "activePage",
   initialState,
   reducers: {
-    setActivePage: (state, action: PayloadAction<number>) => action.payload,
+    setActivePage: (_state, action: PayloadAction<number>) => action.payload,
   },
 });
 

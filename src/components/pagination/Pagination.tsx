@@ -15,7 +15,7 @@ export const Pagination: FC<PaginationProps> = ({ count, activePage }) => {
   const { items } = usePagination({
     count,
     page: activePage,
-    onChange(event, page) {
+    onChange(_event, page) {
       dispatch(setActivePage(page));
     },
   });
