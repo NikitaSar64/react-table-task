@@ -1,0 +1,59 @@
+@import "@styles/variables.scss";
+
+.wrapper {
+  display: flex;
+
+  align-items: center;
+  li {
+    list-style-type: none;
+    &:first-child,
+    &:last-child {
+      flex-grow: 1;
+      .btn {
+        font-size: 24px;
+
+        font-weight: 500;
+
+        font-style: normal;
+      }
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.btn {
+  color: $gray;
+
+  border: none;
+
+  background: none;
+
+  line-height: 137.687%;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.active {
+  color: $active;
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    flex-wrap: wrap;
+
+    justify-content: center;
+    li {
+      &:first-child,
+      &:last-child {
+        text-align: center;
+
+        width: 100%;
+      }
+    }
+  }
+}

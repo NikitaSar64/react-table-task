@@ -1,0 +1,60 @@
+@import "@styles/variables.scss";
+
+.header {
+  background-color: $gray;
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+  line-height: 137.687%;
+
+  height: 54px;
+
+  th {
+    &:nth-of-type(1) {
+      width: 10%;
+    }
+    &:nth-of-type(2) {
+      width: 60%;
+    }
+    &:nth-of-type(3) {
+      width: 60%;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      padding: 0 5px;
+
+      cursor: pointer;
+      svg {
+        rotate: 0;
+
+        transition: rotate 500ms ease;
+      }
+    }
+  }
+}
+
+.rotate {
+  rotate: 180deg;
+}
+
+@media (max-width: 400px) {
+  .header {
+    th {
+      &:nth-of-type(1) {
+        width: 10;
+      }
+      &:nth-of-type(2) {
+        width: 35%;
+      }
+      &:nth-of-type(3) {
+        width: 55%;
+      }
+    }
+  }
+}

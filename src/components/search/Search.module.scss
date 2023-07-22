@@ -1,0 +1,33 @@
+@import "@styles/variables";
+
+.search {
+  padding: 16px 26px;
+
+  background: $light-gray;
+
+  max-width: 631px;
+
+  display: flex;
+
+  input {
+    width: 100%;
+
+    background-color: inherit;
+
+    color: white;
+
+    border: none;
+
+    outline: none;
+    &::placeholder {
+      color: #b2b7bf;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 137.687%;
+    }
+  }
+  svg {
+    fill: white;
+  }
+}
